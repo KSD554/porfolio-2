@@ -13,7 +13,7 @@ const Navbar = () => {
         {/* Logo */}
         <div>
           <a href="/">
-            <h1 className="text-white">KSD</h1>
+            <h1 className="text-white text-xl font-bold">KSD</h1>
           </a>
         </div>
         {/* Logo */}
