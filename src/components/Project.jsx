@@ -1,6 +1,6 @@
-import React from "react";
 import LogoCraft from "../assets/logo-craft.png";
 import PlumePartagee from "../assets/plume-partagee.png";
+import Projet5 from "../assets/projet-5.png";
 import { FaGithub } from "react-icons/fa";
 
 const Project = () => {
@@ -29,6 +29,15 @@ const Project = () => {
       link: "https://plume-partagee.onrender.com",
       github: "https://github.com/KSD554/mern-blog",
       image: PlumePartagee,
+    },
+    {
+      title: "CV Forge",
+      description:
+        "Avec CV Forge, transformez votre parcours professionnel en une véritable œuvre d'art. Notre plateforme intuitive vous permet de concevoir un CV moderne, personnalisé et impactant, adapté à votre domaine d'expertise. Que vous soyez étudiant, jeune diplômé ou professionnel expérimenté, CV Forge vous offre des outils puissants pour mettre en valeur vos compétences et captiver les recruteurs.Car votre carrière mérite un CV aussi solide et remarquable que vous. 💼✨",
+      techStack: ["Next js", "DaisyUI", "Tailwind CSS"],
+      link: "https://plume-partagee.onrender.com",
+      github: "https://cv-forge-ci.vercel.app",
+      image: Projet5,
     },
   ];
   return (
