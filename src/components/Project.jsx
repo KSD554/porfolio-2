@@ -1,6 +1,8 @@
 import LogoCraft from "../assets/logo-craft.png";
 import PlumePartagee from "../assets/plume-partagee.png";
 import Projet5 from "../assets/projet-5.png";
+import Projet1 from "../assets/projet-1.png";
+import Projet2 from "../assets/projet-2.png";
 import { FaGithub } from "react-icons/fa";
 
 const Project = () => {
@@ -35,9 +37,27 @@ const Project = () => {
       description:
         "Avec CV Forge, transformez votre parcours professionnel en une véritable œuvre d'art. Notre plateforme intuitive vous permet de concevoir un CV moderne, personnalisé et impactant, adapté à votre domaine d'expertise. Que vous soyez étudiant, jeune diplômé ou professionnel expérimenté, CV Forge vous offre des outils puissants pour mettre en valeur vos compétences et captiver les recruteurs.Car votre carrière mérite un CV aussi solide et remarquable que vous. 💼✨",
       techStack: ["Next js", "DaisyUI", "Tailwind CSS"],
-      link: "https://plume-partagee.onrender.com",
-      github: "https://cv-forge-ci.vercel.app",
+      link: "https://cv-forge-ci.vercel.app",
+      github: "",
       image: Projet5,
+    },
+    {
+      title: "CasaCentral",
+      description:
+        "CasaCentral propose des propriétés exceptionnelles, alliant confort et design moderne, pour une expérience immobilière unique et personnalisée.",
+      techStack: ["React js", "Tailwind CSS"],
+      link: "https://casacentral-seven.vercel.app",
+      github: "",
+      image: Projet1,
+    },
+    {
+      title: "E-Shop",
+      description:
+        "Cette plateforme permet aux utilisateurs de créer un compte, gérer leurs commandes, ajouter des produits à la wishlist et modifier leur profil. Les vendeurs peuvent ajouter des produits, gérer des événements, suivre les commandes et gérer les paiements",
+      techStack: ["React js", "Tailwind CSS"],
+      link: "https://multi-vendor-ecommerce-main-hi7c.vercel.app/",
+      github: "",
+      image: Projet2,
     },
   ];
   return (
