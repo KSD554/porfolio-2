@@ -1,4 +1,4 @@
-import React from "react";
+import Swal from "sweetalert2";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 const Contact = () => {
@@ -21,7 +21,12 @@ const Contact = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      Swal.fire({
+        title: "Envoi réussi !",
+        text: "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+        icon: "success",
+      });
+
     }
   };
   return (
@@ -39,12 +44,12 @@ const Contact = () => {
               </h1>
               <p className="text-gray-300 my-5">
                 Je suis toujours ravi de discuter de nouveaux projets,
-                d&apos;opportunités de collaboration ou tout simplement d&apos;échanger
-                autour de la technologie. Que vous ayez une idée à développer,
-                besoin d&apos;un développeur passionné pour donner vie à votre
-                vision, ou que vous souhaitiez simplement vous connecter,
-                n&apos;hésitez pas à me contacter. Construisons quelque chose
-                d&apos;extraordinaire ensemble !
+                d&apos;opportunités de collaboration ou tout simplement
+                d&apos;échanger autour de la technologie. Que vous ayez une idée
+                à développer, besoin d&apos;un développeur passionné pour donner
+                vie à votre vision, ou que vous souhaitiez simplement vous
+                connecter, n&apos;hésitez pas à me contacter. Construisons
+                quelque chose d&apos;extraordinaire ensemble !
               </p>
               <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
               <p className="text-gray-600 mt-2">
