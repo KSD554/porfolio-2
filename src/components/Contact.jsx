@@ -2,6 +2,28 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "04bdce3d-b3e8-44b7-b22e-48c0d31d548f");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
   return (
     <section id="contact" className="bg-gray-950 py-16 px-6">
       <div className="max-w-7xl mx-auto">
@@ -17,12 +39,12 @@ const Contact = () => {
               </h1>
               <p className="text-gray-300 my-5">
                 Je suis toujours ravi de discuter de nouveaux projets,
-                d'opportunités de collaboration ou tout simplement d'échanger
+                d&apos;opportunités de collaboration ou tout simplement d&apos;échanger
                 autour de la technologie. Que vous ayez une idée à développer,
-                besoin d'un développeur passionné pour donner vie à votre
+                besoin d&apos;un développeur passionné pour donner vie à votre
                 vision, ou que vous souhaitiez simplement vous connecter,
-                n'hésitez pas à me contacter. Construisons quelque chose
-                d'extraordinaire ensemble !
+                n&apos;hésitez pas à me contacter. Construisons quelque chose
+                d&apos;extraordinaire ensemble !
               </p>
               <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
               <p className="text-gray-600 mt-2">
@@ -56,7 +78,7 @@ const Contact = () => {
             <h3 className="text-3xl font-semibold text-gray-300 mb-6">
               Contactez-nous
             </h3>
-            <form action="" className="space-y-6">
+            <form onSubmit={onSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
@@ -67,6 +89,7 @@ const Contact = () => {
                 <input
                   type="name"
                   id="name"
+                  name="name"
                   className="mt-1 w-full p-3 border bg-gray-950 text-gray-300 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Votre Nom"
                 />
@@ -81,6 +104,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   className="mt-1 w-full p-3 border bg-gray-950 text-gray-300 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Votre email"
                 />
@@ -94,6 +118,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="messsage"
+                  name="message"
                   rows={5}
                   className="mt-1 w-full p-3 border bg-gray-950 text-gray-300 border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
                   placeholder="Votre Message"
