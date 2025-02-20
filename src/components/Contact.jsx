@@ -51,18 +51,18 @@ const Contact = () => {
                 quelque chose d&apos;extraordinaire ensemble !
               </p>
               <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
-              <p className="text-gray-300 mt-2">
-                <span className="hover:underline cursor-pointer">
+              <p className="text-gray-600 mt-2">
+                <a href="#" className="text-blue-500 hover:underline">
                   kouassisadok3@gmail.com
-                </span>
+                </a>
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-gray-300">Phone</h3>
-              <p className="text-gray-300 mt-2">
-                <span className="hover:underline cursor-pointer">
+              <p className="text-gray-600 mt-2">
+                <a href="#" className="text-blue-500 hover:underline">
                   +225 07 04 30 66 42
-                </span>
+                </a>
               </p>
             </div>
             <div>
