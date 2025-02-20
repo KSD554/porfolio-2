@@ -53,17 +53,17 @@ const Contact = () => {
               </p>
               <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
               <p className="text-gray-600 mt-2">
-                <a href="#" className="text-blue-500 hover:underline">
-                  kouassisadok3@gmail.com
-                </a>
+              <span className="text-blue-500 hover:underline cursor-pointer">
+    kouassisadok3@gmail.com
+  </span>
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-gray-300">Phone</h3>
               <p className="text-gray-600 mt-2">
-                <a href="#" className="text-blue-500 hover:underline">
-                  +225 07 04 30 66 42
-                </a>
+              <span className="text-blue-500 hover:underline cursor-pointer">
+      +225 07 04 30 66 42
+    </span>
               </p>
             </div>
             <div>
@@ -71,10 +71,19 @@ const Contact = () => {
                 Suivez-moi
               </h3>
               <div className="flex gap-3 text-2xl transition-all mt-5">
-                <FaFacebook className="text-blue-400" />
-                <FaInstagram className="text-blue-400" />
-                <FaLinkedin className="text-blue-400" />
-                <FaSquareXTwitter className="text-blue-400" />
+              <a href="https://www.facebook.com/share/1DTGrG5Hhg/?mibextid=wwXIfr">
+              <FaFacebook className="hover:text-blue-400" />
+            </a>
+
+            <a href="https://www.instagram.com/ksd6013/profilecard/?igsh=N2Z6enFiejBxbmp1">
+              <FaInstagram className="hover:text-blue-400" />
+            </a>
+            <a href="https://www.linkedin.com/in/sadok-debruchard-kouassi-96357b323">
+              <FaLinkedin className="hover:text-blue-400" />
+            </a>
+            <a href="https://www.youtube.com/@ksd679">
+              <FaYoutube className="hover:text-blue-400" />
+            </a>
               </div>
             </div>
           </div>

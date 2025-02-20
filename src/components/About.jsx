@@ -14,20 +14,20 @@ const About = () => {
           <div className="relative border hidden md:block border-blue-600 p-1 rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500">
             <img
               src={AboutImg}
-              alt=""
+              alt="ig"
               className="w-[300px] md:w-[1500px] rounded-full border-blue-600 border shadow-blue-500 "
             />
           </div>
           {/* section paragraphe */}
           <div className="p-5 md:p-10 bg-gray-950 rounded-md shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500">
-            <p className="text-lg leading-7 mb-6">
-              Salut ! Je suis Rohit Singh, un développeur Full-Stack passionné
+            <p className="text-lg leading-7 mb-5">
+              Salut! Je suis KSD, un développeur Full-Stack passionné
               avec une expertise dans la pile MERN, WordPress et le
               référencement. Avec une base solide dans le développement Web
               moderne et un souci du détail, je crée des solutions Web élégantes
               et conviviales adaptées aux besoins des clients.
             </p>
-            <p className="text-lg leading-7 mb-6">
+            <p className="text-lg leading-7 mb-5">
               Mon parcours dans la technologie a commencé sans expérience
               informatique et j'ai relevé tous les défis pour perfectionner mes
               compétences en développement, résolution de problèmes et travail
