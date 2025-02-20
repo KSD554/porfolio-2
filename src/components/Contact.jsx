@@ -52,16 +52,16 @@ const Contact = () => {
                 quelque chose d&apos;extraordinaire ensemble !
               </p>
               <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
-              <p className="text-gray-600 mt-2">
-              <span className="text-white hover:underline cursor-pointer">
+              <p className="text-gray-300 mt-2">
+              <span className=" hover:underline cursor-pointer">
     kouassisadok3@gmail.com
   </span>
               </p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-gray-300">Phone</h3>
-              <p className="text-gray-600 mt-2">
-              <span className="text-white hover:underline cursor-pointer">
+              <p className="text-gray-300 mt-2">
+              <span className=" hover:underline cursor-pointer">
       +225 07 04 30 66 42
     </span>
               </p>
