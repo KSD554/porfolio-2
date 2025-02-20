@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../assets/About.png";
+import G from "../assets/g.jpg";
 import { FaChevronRight } from "react-icons/fa";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
           {/* img section */}
           <div className="relative border hidden md:block border-blue-600 p-1 rounded-full bg-blue-500 shadow-[0px_0px_20px_10px_rgba(0,0,0,0.3)] shadow-blue-500">
             <img
-              src={AboutImg}
+              src={G}
               alt="ig"
               className="w-[300px] md:w-[1500px] rounded-full border-blue-600 border shadow-blue-500 "
             />
