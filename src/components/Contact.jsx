@@ -53,7 +53,7 @@ const Contact = () => {
               </p>
               <h3 className="text-2xl font-semibold text-gray-300">Email</h3>
               <p className="text-gray-600 mt-2">
-              <span className="text-blue-500 hover:underline cursor-pointer">
+              <span className="text-white hover:underline cursor-pointer">
     kouassisadok3@gmail.com
   </span>
               </p>
@@ -61,7 +61,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-semibold text-gray-300">Phone</h3>
               <p className="text-gray-600 mt-2">
-              <span className="text-blue-500 hover:underline cursor-pointer">
+              <span className="text-white hover:underline cursor-pointer">
       +225 07 04 30 66 42
     </span>
               </p>
