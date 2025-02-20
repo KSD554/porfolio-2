@@ -69,7 +69,7 @@ const Hero = () => {
             <a href="https://www.instagram.com/ksd6013/profilecard/?igsh=N2Z6enFiejBxbmp1">
               <FaInstagram className="hover:text-blue-400" />
             </a>
-             <a href="linkedin.com/in/sadok-debruchard-kouassi-96357b323">
+             <a href="https://www.linkedin.com/in/sadok-debruchard-kouassi-96357b323">
 
             <FaLinkedin className="hover:text-blue-400" />
              </a>
